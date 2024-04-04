@@ -9,6 +9,8 @@ export const metadata: Metadata = {
   description: "Full Stack Engineer",
 };
 
+import Navbar from "@src/components/Navbar";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -17,6 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${font.className} bg-bg-primary text-text-secondary`}>
+        <Navbar/>
         {children}
       </body>
     </html>

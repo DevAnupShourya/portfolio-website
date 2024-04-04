@@ -14,6 +14,7 @@ const config: Config = {
         'bg-highlight': '#212121',
         'accent': '#ff3c00',
         'highlight': '#c8f500',
+        'divider': '#222222',
       }
     },
   },
