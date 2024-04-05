@@ -10,6 +10,7 @@ export const metadata: Metadata = {
 };
 
 import Navbar from "@src/components/Navbar";
+import Footer from "@src/sections/Footer";
 
 export default function RootLayout({
   children,
@@ -18,9 +19,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${font.className} bg-bg-primary text-text-secondary`}>
-        <Navbar/>
+      <body className={`${font.className} bg-bg-primary text-text-secondary transition-all duration-500`}>
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

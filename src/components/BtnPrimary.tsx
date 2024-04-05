@@ -11,7 +11,7 @@ export default function BtnPrimary({
   return (
     <Link
       href="#"
-      className="py-2 px-4 rounded-md bg-accent text-white text-xs transition-all BtnPrimary"
+      className="py-2 px-4 rounded-md bg-accent text-white text-xs transition-all BtnPrimary duration-500"
     >
       {innerText}
     </Link>

@@ -27,7 +27,7 @@ export default function LinkBtn({
     <Link
       href={href}
       target={isExternal ? "_blank" : "_self"}
-      className={`inline-block text-sm px-4 py-2 rounded-full border border-divider hover:border-bg-secondary hover:bg-bg-secondary hover:text-text-primary transition-all duration-500 group`}
+      className={`inline-block text-sm px-4 py-2 rounded-full border border-divider hover:border-bg-secondary hover:bg-bg-secondary hover:text-text-primary transition-all duration-500 group capitalize`}
     >
       {name}{" "}
       <svg

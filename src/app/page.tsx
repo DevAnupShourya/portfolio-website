@@ -1,11 +1,11 @@
-import Footer from "@src/sections/Footer";
 import Hero from "@src/sections/Hero";
+import Work from "@src/sections/Work";
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <Footer/>
+      <Work />
     </>
   );
 }
