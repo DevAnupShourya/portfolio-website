@@ -1,19 +1,39 @@
+import { toolsIKnow } from "@src/constants";
+
 export default function Hero() {
   return (
-    <section className="global-section-padding h-screen grid items-center">
-      <main>
-        <h1 className="text-6xl max-md:text-4xl text-text-primary tracking-widest leading-tight">
-          Full-Stack <br /> Web Engineer
+    <section data-scroll-section id="home" className="global-section-padding h-screen grid items-center">
+      <main className="overflow-hidden text-center">
+        <h1 className="overflow-hidden text-6xl max-md:text-4xl text-text-primary tracking-widest leading-tight uppercase font-bold">
+          <span className="hero-text block">
+            Fresh Ideas
+          </span>
         </h1>
-        <div className="py-5">
-          <div className="flex-r-btw w-1/3  max-lg:w-full py-4">
-            <button className="text-xs hover:text-white transition-colors font-semibold duration-200 text-white">For anyone</button>
-            <button className="text-xs hover:text-white transition-colors font-semibold duration-200 ">Front-End</button>
-            <button className="text-xs hover:text-white transition-colors font-semibold duration-200 ">Backend-End</button>
-            <button className="text-xs hover:text-white transition-colors font-semibold duration-200 ">Full-Stack</button>
+        <h1 className="overflow-hidden text-6xl max-md:text-4xl text-text-primary tracking-widest leading-tight uppercase font-bold">
+          <span className="hero-text block">
+            Modern Solutions
+          </span>
+        </h1>
+        <h1 className="overflow-hidden text-6xl max-md:text-4xl text-text-primary tracking-widest leading-tight uppercase font-bold">
+          <span className="hero-text block">
+            Smooth Development
+          </span>
+        </h1>
+        <h3 className="hero-para text-pretty text-white capitalize py-4">I love to develop useful software products.</h3>
+        <div className="tools-wrapper relative max-w-screen-sm text-xs font-extralight uppercase overflow-hidden flex flex-row flex-nowrap gap-3 mx-auto text-highlight">
+          <div className="tools flex flex-row flex-nowrap gap-3">
+            {toolsIKnow.map(t =>
+              <span className="tool text-center">
+                {t}
+              </span>
+            )}
           </div>
-          <div className="w-2/4 max-lg:w-full">
-            <p className="text-pretty text-white">I pair my background of technical and visual skills plus experience working with no-code tools to deliver websites that perform and convert.</p>
+          <div className="tools flex flex-row flex-nowrap gap-3">
+            {toolsIKnow.map(t =>
+              <span className="tool text-center">
+                {t}
+              </span>
+            )}
           </div>
         </div>
       </main>

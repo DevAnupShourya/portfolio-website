@@ -20,7 +20,7 @@ export default function Footer() {
               contact.yourwebdev@gmail.com
             </Link>
           </div>
-          <div className="w-full max-md:w-full py-2 my-[10vh]">
+          <div className="w-full max-md:w-full py-2 my-[10vh]" id="contact">
             <h1 className="text-sm  capitalize my-5">let&apos;s be friend! 👋🏻</h1>
             <div className="flex flex-wrap gap-4 justify-between max-md:gap-2 py-2">
               {SocialLinks.map((link) => {

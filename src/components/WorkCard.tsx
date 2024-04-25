@@ -6,7 +6,7 @@ type Props = {
   image: string;
   logo: string;
   name: string;
-  type: "Web App" | "Front-End" | "Backend" | "Full-Stack";
+  type: string;
   date: string;
   desc: string;
   link: string;
@@ -17,7 +17,7 @@ export default function WorkCard(props: Props) {
   return (
     <Link
       href={props.link}
-      className="rounded-lg border border-bg-secondary hover:border hover:border-divider transition-all duration-500"
+      className="work-card opacity-0 rounded-lg border border-bg-secondary hover:border hover:border-divider transition-all duration-500"
     >
       <main className="w-[40vw] max-lg:w-full bg-bg-secondary hover:bg-bg-primary transition-all duration-500">
         <div className="w-full h-[30vw] max-lg:h-[65vw] max-md:h-[70vw]">
@@ -55,7 +55,7 @@ export default function WorkCard(props: Props) {
           <div className="flex-r-btw ">
             <h1 className="font-semibold text-lg text-text-primary flex items-center max-lg:flex-wrap">
               {props.name}
-              {props.underDevelopment && <Tag text="coming soon"/>}
+              {props.underDevelopment && <Tag text="coming soon" />}
             </h1>
             <h1 className="font-semibold text-sm text-end">
               {props.type} | {props.date}
