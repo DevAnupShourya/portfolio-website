@@ -2,12 +2,15 @@
 
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-// import { ScrollTrigger } from 'gsap/ScrollTrigger';
-// gsap.registerPlugin(ScrollTrigger);
+import { useRef } from "react";
 
-export default function Animations() {
+export default function Animations({
+    children,
+}: Readonly<{
+    children: React.ReactNode;
+}>) {
 
-    const page = document.querySelectorAll('#page');
+    const page = useRef(null);
 
     useGSAP(() => {
         // Hero
@@ -59,6 +62,8 @@ export default function Animations() {
 
 
     return (
-        <></>
+        <html ref={page} lang="en">
+            {children}
+        </html>
     )
 }

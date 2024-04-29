@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 import Navbar from "@src/components/Navbar";
 import Footer from "@src/sections/Footer";
 import LocomotiveScrollComponent from "@src/animations/LocomotiveScroll";
-import Animations from "@src/animations/Animations";
+import AnimationsContainer from "@src/animations/Animations";
 
 export default function RootLayout({
   children,
@@ -20,18 +20,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <AnimationsContainer>
+      <LocomotiveScrollComponent />
       <body
         data-scroll-container
         id="page"
         className={`${font.className} bg-bg-primary text-text-secondary transition-all duration-500 overflow-x-hidden selection:bg-highlight selection:text-accent`}
       >
-        <Animations/>
-        <LocomotiveScrollComponent />
         <Navbar />
         {children}
         <Footer />
       </body>
-    </html>
+    </AnimationsContainer>
   );
 }

@@ -1,18 +1,3 @@
-export const NavbarLinks = [
-    {
-        url: '#about',
-        name: 'about',
-    },
-    {
-        url: '#works',
-        name: 'works',
-    },
-    {
-        url: '#contact',
-        name: 'contact',
-    },
-]
-
 export const SocialLinks = [
     {
         name: 'twitter',
@@ -47,56 +32,40 @@ export const Projects = [
         link: "/",
         underDevelopment: true
     },
-    {
-        image: "https://framerusercontent.com/images/sqTb7Ydo0NkQwUAMdGBbfmJwGQ.png?scale-down-to=1024",
-        logo: "Knock Logo",
-        name: "Knock",
-        type: "Front-End",
-        date: "2022",
-        desc: "Expanding a redesign with richer details, an all new integrations library and subsequent landing pages.",
-        link: "/",
-    },
-    {
-        image: "https://framerusercontent.com/images/xsQbWUuFrcH6hK5kYnJfJ8Gc6hE.png?scale-down-to=1024",
-        logo: "Jerry Logo",
-        name: "Jerry",
-        type: "Backend",
-        date: "2023",
-        desc: "Designing a conceptual customer flow in 4 days for a partnership with an industry leading marketplace partner.",
-        link: "/",
-    },
-    {
-        image: "https://framerusercontent.com/images/MAbNX7etWcVkYLh1EAE4vbsLs0k.png?scale-down-to=1024",
-        logo: "Able Logo",
-        name: "Able",
-        type: "Web App",
-        date: "2021",
-        desc: "Automating savings, tax calculations, and record keeping for creators.",
-        link: "/",
-        underDevelopment: true
-    },
-    {
-        image: "https://framerusercontent.com/images/bbnG6FerpIHgzLRjEMy4rMTgdk.png?scale-down-to=1024",
-        logo: "Raster Logo",
-        name: "Raster",
-        type: "Web App",
-        date: "2019",
-        desc: "A next generation digital asset manager for modern teams to organize, edit, and host photography. ",
-        link: "/",
-    },
 ]
 
 export const toolsIKnow = [
+    // languages
     'JAVASCRIPT',
     'TYPESCRIPT',
+
+    // front end
     'REACTJS',
     'NEXTJS',
-    'NODEJS',
-    'MONGODB',
+    'HTML5',
+    'CSS',
     'SASS',
     'TAILWINDCSS',
+    'MaterialUI',
+    'ShadCNUI',
+    'NextUI',
     'REDUX',
-    'RESTFULAPI',
-    'GSAP',
-    'THREEJS',
-]
+
+    // backend end
+    'NODEJS',
+    'Express.js',
+    'Prisma',
+    'Docker',
+
+    // db
+    'MONGODB',
+    'PostgreSQL',
+    'MySQL',
+
+    // software       
+    'Git',
+    'GitHub',
+    'Lunacy',
+    'Vim',
+    'VSCode',
+];

@@ -39,10 +39,10 @@ function Work() {
 
     gsap.to(".work-card", {
       opacity: 1,
-      stagger: 0.3,
+      stagger: 0.2,
       scrollTrigger: {
         trigger: container.current,
-        start: "top 75%",
+        start: "top 65%",
         end: "bottom 25%",
         toggleActions: "restart none none reverse"
       }
