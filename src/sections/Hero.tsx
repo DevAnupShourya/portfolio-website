@@ -23,14 +23,14 @@ export default function Hero() {
         <div className="tools-wrapper relative max-w-screen-sm text-xs font-extralight uppercase overflow-hidden flex flex-row flex-nowrap gap-3 mx-auto text-highlight">
           <div className="tools flex flex-row flex-nowrap gap-3">
             {toolsIKnow.map(t =>
-              <span className="tool text-center">
+              <span key={t} className="tool text-center">
                 {t}
               </span>
             )}
           </div>
           <div className="tools flex flex-row flex-nowrap gap-3">
             {toolsIKnow.map(t =>
-              <span className="tool text-center">
+              <span key={t} className="tool text-center">
                 {t}
               </span>
             )}
