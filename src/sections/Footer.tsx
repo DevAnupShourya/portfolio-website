@@ -13,7 +13,7 @@ export default function Footer() {
               me an email. <br /> I’m currently available for freelance/contract work.
             </p>
             <Link
-              href=""
+              href="mailto:contact.yourwebdev@gmail.com"
               target="_blank"
               className={`inline-block text-sm px-4 py-2 rounded-full border border-text-primary bg-text-primary text-bg-secondary transition-all duration-500 my-2 hover:bg-bg-secondary hover:text-text-primary hover:border-bg-secondary`}
             >

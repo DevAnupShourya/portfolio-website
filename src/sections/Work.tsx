@@ -60,9 +60,10 @@ function Work() {
         {Projects.map((project) => {
           return (
             <WorkCard
-              key={project.image}
+              key={project.name}
               image={project.image}
-              logo={project.logo}
+              status={project.status}
+              logo={project.logoUrl}
               name={project.name}
               type={project.type}
               date={project.date}

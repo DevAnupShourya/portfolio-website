@@ -16,23 +16,62 @@ export const SocialLinks = [
         url: 'https://discord.com/users/1205834045486006323',
     },
     {
-        name: 'reddit',
-        url: 'https://www.reddit.com/user/HumanEngieer/',
+        name: 'fiverr',
+        url: 'https://www.fiverr.com/yourwebdevanup',
+    },
+    {
+        name: 'upwork',
+        url: 'https://www.upwork.com/freelancers/~012fda8d55f862fe5f',
     },
 ]
 
-export const Projects = [
+type Projects = {
+    image: string;
+    logoUrl: string;
+    name: string;
+    status: string;
+    type: string;
+    date: string;
+    desc: string;
+    link: string;
+    underDevelopment?: boolean;
+};
+
+export const Projects: Projects[] = [
     {
-        image: "https://framerusercontent.com/images/8pZP1I83Lon69ZpDxNInyq1E6E.png?scale-down-to=1024",
-        logo: "Band Logo",
-        name: "Band",
+        image: "/assets/projects/mynx.webp",
+        logoUrl: "/assets/projects/mynx.svg",
+        status: "live",
+        name: "Mynx",
         type: "Full-Stack",
-        date: "2023",
-        desc: "Reimagining direct buying group tools with intuitive interfaces, and streamlined workflows.",
-        link: "/",
+        date: "2024",
+        desc: "World in Pixels, the ultimate social media platform designed to connect individuals",
+        link: "https://mynx.vercel.app/",
+        underDevelopment: false
+    },
+    {
+        image: "",
+        logoUrl: "/assets/projects/spons.svg",
+        status: "designing",
+        name: "Spons",
+        type: "SASS",
+        date: "2024",
+        desc: "The future of influencer marketing, connecting creators and brands for explosive growth.",
+        link: "#",
         underDevelopment: true
     },
-]
+    {
+        image: "",
+        logoUrl: "/assets/projects/gati.png", // Ankh Sanctuary Font
+        status: "designing",
+        name: "GATI.JS",
+        type: "GSAP Components Library",
+        date: "2024",
+        desc: "Unleash the power of GSAP and Three.js with pre-built component0s.",
+        link: "#",
+        underDevelopment: true
+    },
+]   
 
 export const toolsIKnow = [
     // languages
