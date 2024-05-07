@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Head from 'next/head';
 import { Spline_Sans_Mono } from "next/font/google";
 import "../styles/globals.css";
 

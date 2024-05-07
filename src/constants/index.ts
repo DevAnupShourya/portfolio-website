@@ -51,12 +51,12 @@ export const Projects: Projects[] = [
     },
     {
         image: "",
-        logoUrl: "/assets/projects/spons.svg",
+        logoUrl: "/assets/projects/nexus.ai.png",
         status: "designing",
-        name: "Spons",
+        name: "Nexus.ai",
         type: "SASS",
         date: "2024",
-        desc: "The future of influencer marketing, connecting creators and brands for explosive growth.",
+        desc: "The Wikipedia of the future: Community-driven, AI-powered.",
         link: "#",
         underDevelopment: true
     },
