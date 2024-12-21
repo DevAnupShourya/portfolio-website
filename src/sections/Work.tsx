@@ -51,26 +51,15 @@ function Work() {
   }, [container.current]);
 
   return (
-    <section data-scroll-section id="works" className="global-section-padding my-10">
+    <section data-scroll-section id="works" className="my-20">
       <div
         ref={container}
         id="work-cards-container"
-        className="flex-r-btw gap-20 max-lg:flex-col max-lg:gap-10"
+        className="w-full h-fit lg:grid lg:grid-cols-[repeat(3,80vw)] lg:grid-rows-[repeat(1,50vw)] gap-20"
       >
         {Projects.map((project) => {
           return (
-            <WorkCard
-              key={project.name}
-              image={project.image}
-              status={project.status}
-              logo={project.logoUrl}
-              name={project.name}
-              type={project.type}
-              date={project.date}
-              desc={project.desc}
-              link={project.link}
-              underDevelopment={project.underDevelopment}
-            />
+            <WorkCard key={project.name} {...project}/>
           );
         })}
       </div>

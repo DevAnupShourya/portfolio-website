@@ -3,8 +3,9 @@ const nextConfig = {
     images: {
         remotePatterns: [
           {
+            // TODO : Remove after use
             protocol: 'https',
-            hostname: 'framerusercontent.com',
+            hostname: 'placehold.co',
           },
         ],
       },
