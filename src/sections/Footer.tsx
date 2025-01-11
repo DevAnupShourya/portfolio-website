@@ -9,12 +9,13 @@ export default function Footer() {
         <div className="w-1/3 max-md:w-full bg-bg-secondary rounded-md px-6 flex flex-col justify-between flex-nowrap">
           <div>
             <h1 className="text-lg text-text-primary capitalize mt-4 mb-8">let&apos;s be friend! 👋🏻</h1>
+            {/* TODO : implement copy action */}
             <Link
               href="mailto:contact.yourwebdev@gmail.com"
               target="_blank"
               className={`text-sm capitalize transition-colors duration-500 hover:text-text-primary font-light flex flex-row flex-nowrap gap-1 justify-center items-center max-w-fit max-md:underline underline-offset-4`}
             >
-              <AtSignIcon className="size-4" /> Shoot me an email
+              <AtSignIcon className="size-4" /> Copy my email
             </Link>
             <Link
               // TODO : have pdf link

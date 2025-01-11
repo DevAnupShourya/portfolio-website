@@ -40,7 +40,7 @@ export default function RootLayout({
           suppressHydrationWarning
           className={`${font.className} bg-bg-primary text-text-secondary transition-all duration-500 overflow-x-hidden selection:bg-accent selection:text-text-primary`}
         >
-          <div id="pageBg" className="absolute top-0 z-[-2] size-full bg-bg-primary bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(254,53,68,0.3),rgba(255,255,255))] dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
+          {/* <div id="pageBg" className="absolute top-0 z-[-2] size-full bg-bg-primary bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(254,53,68,0.3),rgba(255,255,255))] dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div> */}
           <Navbar />
           <div className="container mx-auto">
             {children}
